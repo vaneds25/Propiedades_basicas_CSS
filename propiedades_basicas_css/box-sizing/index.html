@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de Box Sizing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="box first">Content Box</div>
+  <div class="box second">Border Box</div>
+</body>
+</html>
+
+
+  <!-- 
+  Diferencia entre content-box y border-box:
+
+  1. content-box (por defecto):
+     - El width y height solo incluyen el contenido.
+     - Tamaño total = width + padding + border.
+
+  2. border-box:
+     - El width y height incluyen contenido, padding y borde.
+     - Tamaño total = constante, sin importar el padding o el borde.
+
+  Ejemplo en esta página:
+    - La primera caja usa content-box (tamaño total más grande).
+    - La segunda caja usa border-box (tamaño total fijo a 100px).
+  -->
